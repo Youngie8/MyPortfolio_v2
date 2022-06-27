@@ -34,7 +34,7 @@ h5 img{
     color: #16874c;
 }
 .sections{
-    margin-left: 48px;
+    margin-left:50px;
 }
 .ml{
     margin-left: 0%;
@@ -44,7 +44,7 @@ h5 img{
 }
 .side-bar{
     position: fixed;
-    width: 48px;
+    width: 50px;
     height: 100%;
     padding-top: 10%;
 }
