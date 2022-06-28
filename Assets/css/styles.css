@@ -55,7 +55,7 @@ h5 img{
 .success{
     background-color:  #16874c;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    cursor: wait;
+    cursor: grabbing;
     
 }
 .text-cursive{
