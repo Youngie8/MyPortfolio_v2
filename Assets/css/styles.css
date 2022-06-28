@@ -4,10 +4,13 @@ body::before{
     content: '';
     background-color: #28a745;
 }
+a{
+    color: none;
+}
 *{
     border:none;
 }
-nav{
+nav, footer{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 div img{
@@ -52,6 +55,7 @@ h5 img{
 .success{
     background-color:  #16874c;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: wait;
     
 }
 .text-cursive{
@@ -174,4 +178,8 @@ body, .btn{
 .ff{
     font-family: Georgia, 'Times New Roman', Times, serif;
     letter-spacing: 0.3rem;
+}
+.tag{
+    border-radius: 10px;
+    color: #fff;
 }
