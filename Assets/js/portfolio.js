@@ -1,9 +1,13 @@
 const col = document.querySelectorAll('.collumn');
 const contact = document.querySelector('.contact');
 const theme = document.querySelector(".theme");
-var slide = document.querySelector(".section-1");
 
-
+/*$('.section-1').fadeOut(3, function(){
+    console.log("display-none")
+})
+$('.section-1').fadeIn(3000, function(){
+    console.log("faded!")
+})*/
 
 for(var i = 0; i < col.length; i++){
     col[i].addEventListener('mouseover',function(){
@@ -21,21 +25,8 @@ contact.addEventListener('click', function(){
 
 });
 theme.addEventListener('click', function(){
+    //Change the theme of the body
     document.querySelector("body").classList.toggle("changeTheme");
     document.querySelector(".btn").classList.toggle('changeTheme');
     document.querySelector(".theme").classList.toggle('changeTheme');
 }); 
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
-}
