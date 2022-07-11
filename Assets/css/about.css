@@ -1,11 +1,11 @@
 .b-1{
-    border: 2px solid #fff;
+    border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 8px;
     padding: 20px 3%;
     margin: 5px;
 }
 .b-2{
-    border: 2px solid #28a745;
+    border: 1px dashed #28a745;
     border-radius: 8px;
     padding: 20px 3%;
     margin: 50px;
