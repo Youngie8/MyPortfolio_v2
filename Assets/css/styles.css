@@ -22,7 +22,21 @@ li{
 *{
     border:none;
 }
-nav, footer{
+blockquote::before{
+    content: open-quote;
+}
+blockquote::after{
+    content: close-quote;
+}
+blockquote::after, blockquote::before{
+    display: inline-block;
+    vertical-align: bottom;
+    color: lightgray;
+    font-size: 2em;
+    top: .3em;
+    position: relative;
+}
+nav,    .ff-2{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h5 img{
@@ -36,7 +50,7 @@ h5 img{
     color: #fff;
 }
 .btn{
-    border: none;
+    
      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
      padding:10px 20px;
 }
@@ -188,7 +202,7 @@ body, .btn{
     border-radius: 10px;
     color: #fff;
 }
-@media (max-width:768px){
+@media (max-width:767px){
     .none{
         display:block;
     }
@@ -199,7 +213,7 @@ body, .btn{
         display: none;
     }
 }
-.underline:hover{
+.underline:hover, .clicked{
     padding-bottom: 5px;
     border-bottom: #fff solid 1px;
 }

@@ -20,6 +20,7 @@ for(var i = 0; i < col.length; i++){
     })
 }
 contact.addEventListener('click', function(){
+    contact.classList.toggle("clicked");
     document.querySelector('.side-bar').classList.toggle('none');
     document.querySelector(".sections").classList.toggle("ml");
 

@@ -1,0 +1,15 @@
+img{
+    display: table-cell;
+    border-radius: 10px;
+}
+.text-black{
+    color: #000;
+}
+.s-sec, .s-white, .s-black{
+    padding: 110px 0;
+}
+@media(min-width:768px)and(max-width:1024px){
+    img{
+        margin: 10% 10px;
+    }
+}
