@@ -1,15 +1,27 @@
 img{
-    display: table-cell;
+    display: table;
     border-radius: 10px;
 }
 .text-black{
     color: #000;
 }
+.text-dg{
+    color:  #16874c;
+}
 .s-sec, .s-white, .s-black{
     padding: 110px 0;
 }
-@media(min-width:768px)and(max-width:1024px){
-    img{
-        margin: 10% 10px;
+@media(max-width:540px){
+    .s-white, .s-black{
+        text-align: center;
+    }
+    .side-bar{
+        display: none;
+    }
+    .sections{
+        margin: 0;
+    }
+    .lead{
+        font-size: small;
     }
 }
