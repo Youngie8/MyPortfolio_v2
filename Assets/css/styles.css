@@ -56,8 +56,11 @@ h5 img{
 }
 .btn:hover{
     color: #16874c;
-    border-radius: 15px;
+    border-radius: 25px;
     cursor: pointer;
+    animation-name: dangle;
+    animation-duration: .5s;
+    animation-iteration-count: 5;
 }
 .sections{
     margin-left:50px;
@@ -135,10 +138,30 @@ h5 img{
     .contact{
         display: none;
     }
+    .underline:hover, .clicked{
+        border-bottom:none;
+    }
 }
 @media (max-width:800px){
     li{
         padding: 0;
         
+    }
+}
+@keyframes dangle{
+    0%{
+        transform: rotate(0deg);
+    }
+    20%{
+        transform: rotate(10deg);
+    }
+    40%{
+        transform: rotate(5deg);
+    }
+    80%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
