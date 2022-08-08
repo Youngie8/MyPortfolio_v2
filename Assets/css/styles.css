@@ -2,6 +2,7 @@
 *
 {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 body::before{
     display: block;
@@ -10,10 +11,7 @@ body::before{
     background-color: #28a745;
 }
 body, .btn{
-    transition: background-color , 1.2s;
-}
-*{
-    border:none;
+    transition: all, 1s;
 }
 a{
     color: none;
@@ -54,21 +52,31 @@ h5 img{
     background: rgb(0, 0, 0);
     color: #fff;
 }
+.bolder:hover{
+    font-weight: bolder;
+}
 .btn{
-    
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     padding:10px 20px;
+    padding: 10px 20px;
 }
 .btn:hover{
     color: #16874c;
     border-radius: 25px;
     cursor: pointer;
     animation-name: dangle;
+    animation-delay: 1s;
     animation-duration: .5s;
     animation-iteration-count: 5;
 }
+.changeTheme{
+    background-color: #fff;
+    color: #000;
+    font-weight:600;
+}
 .sections{
     margin-left:50px;
+}
+.f-600{
+    font-weight: 600;
 }
 .ml{
     margin-left: 0%;
@@ -84,15 +92,14 @@ h5 img{
 }
 .success{
     background-color:  #16874c;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: grabbing;
     
 }
-.text-cursive{
-    font-family: cursive;
+.text-normal{
+    font-weight: normal;
 }
-.text-fantasy{
-    font-family: fantasy;
+.clicked{
+    font-weight: bolder;
 }
 .img-sqr{
     display: table;
@@ -106,31 +113,9 @@ h5 img{
     padding: 5px;
     min-height: 230px;
 }
-.changeTheme{
-    background-color: #fff;
-    color: #000;
-}
-.ff{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 0.3rem;
-}
 .tag{
     border-radius: 10px;
     color: #fff;
-}
-.underline:hover, .clicked{
-    padding-bottom: 5px;
-    border-bottom: #fff solid 1px;
-}
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 3.9s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 @media (max-width:767px){
@@ -142,9 +127,6 @@ h5 img{
     }
     .contact{
         display: none;
-    }
-    .underline:hover, .clicked{
-        border-bottom:none;
     }
 }
 @media (max-width:800px){
@@ -158,13 +140,13 @@ h5 img{
         transform: rotate(0deg);
     }
     20%{
-        transform: rotate(10deg);
+        transform: rotate(7deg);
     }
     40%{
         transform: rotate(5deg);
     }
     80%{
-        transform: rotate(-10deg);
+        transform: rotate(-7deg);
     }
     100%{
         transform: rotate(0deg);
