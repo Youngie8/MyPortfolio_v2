@@ -72,11 +72,11 @@ h5 img{
     color: #000;
     font-weight:600;
 }
-.sections{
-    margin-left:50px;
-}
 .f-600{
     font-weight: 600;
+}
+.sections{
+    margin-left:50px;
 }
 .ml{
     margin-left: 0%;
@@ -97,6 +97,9 @@ h5 img{
 }
 .text-normal{
     font-weight: normal;
+}
+.text-black {
+    color: #000;
 }
 .clicked{
     font-weight: bolder;
